@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>新年快乐</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Long+Cang&family=Quintessential&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="1.png">
+  <script src="script.js"> </script>
+
+</head>
+
+<body>
+  <div style="position: relative; text-align: center;">
+  <img id="envelope" src="envelope.png" alt="">
+  <h3>CLICK to OPEN!</h3>
+</div>
+
+  <br>
+  <br>
+
+
+
+
+  <div class="main" id="main">
+    <h1>Happy Chinese New Year!</h1>
+    <h1 class="chinese">新年快乐!</h1>
+    <h1>From Tony and Trudy Lau</h1>
+    <hr>
+
+    <h3>Our grandson THEO is taking a Computer Science course in high school, so we decided to ask him to create a “Chinese New Year” greetings card to wish all our friends and relatives a “WONDERFUL and EXCITING NEW YEAR”</h3>
+    <h3>-Tony Lau</h3>
+    <h3 style=text-align:center id="musictext">Please CLICK on the screen!</h3>
+    <h1 class="chinese" id="big">恭喜发财</h1>
+
+    <div style=position: relative>
+      <div class="floating-graphics left">
+        <img src="lantern.png" alt="Chinese Lantern" class="floating-image">
+      </div>
+    </div>
+    <div class="photo-container">
+      <img class="photo" src="1.png" alt="Dog 1">
+    </div>
+
+
+    <hr>
+
+    <div class="poem-container">
+      <h3>A Prosperous Year of the Snake</h3>
+      <p class="intro">The serpent slithers with wisdom and grace</p>
+      <p>Bringing fortune to every place</p>
+      <p>May this year be filled with wealth and cheer</p>
+      <p>With health and happiness drawing near</p>
+      <h4>May the snake's path guide you through</h4>
+      <p>With strength and wisdom in all you do</p>
+      <p>May every step you take lead to success</p>
+      <h5>Wishing you peace, love, and nothing less</h5>
+      <p>In this Year of the Snake, may joy unfold</p>
+      <p>With blessings and fortunes bright as gold</p>
+
+    </div>
+    <hr>
+    <div style=position: relative>
+      <div class="floating-graphics right">
+        <img src="dragon.png" alt="Chinese Dragon" class="floating-image">
+      </div>
+    </div>
+    <div class="poem-container">
+      <h1 id="big" style=font-size:70px>Countdown to Chinese New Year!</h1>
+
+      <h1 id="countdown">#d #h #m #s</h1>
+      <h1 >Jan 29 2025</h1>
+      <script>
+        function updateCountdown() {
+          const newYearDate = new Date("2025-01-29T00:00:00"); // Set date for Chinese New Year 2025
+          const now = new Date();
+          const timeDiff = newYearDate - now;
+
+          if (timeDiff <= 0) {
+            document.getElementById("countdown").innerHTML = "Happy Chinese New Year!";
+            return;
+          }
+
+          const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+          document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }
+
+        setInterval(updateCountdown, 1000);
+      </script>
+
+
+    </div>
+    <hr>
+    <div style="text-align: center;">
+      <h3>THEO: Website CREATOR</h3>
+    </div>
+    <div class="photo-container">
+
+      <img id="small"class="photo" src="2.png" alt="Dog 1">
+    </div>
+
+
+
+  </div>
+  <p>Theo Billings©</p>
+
+
+
+
+
+
+</body>
+
+</html>
