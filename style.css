@@ -1,3 +1,6 @@
+html {
+  overflow-y: scroll;
+}
 body {
   height: 100%;
   background: linear-gradient(90deg, #FF0000, #FF4500, #FFD700, #FF4500, #FF0000);
