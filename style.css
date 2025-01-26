@@ -1,6 +1,12 @@
 html {
   overflow-y: scroll;
 }
+#countdown {
+  min-width: 450px; /* Adjust based on expected text width */
+  max-width: 500px;
+  text-align: center;
+}
+
 body {
   height: 100%;
   background: linear-gradient(90deg, #FF0000, #FF4500, #FFD700, #FF4500, #FF0000);
