@@ -37,21 +37,22 @@ body::before {
   padding: 20px;
   box-sizing: border-box;
   margin-bottom:  10px;
-  display: none;
+  visibility: hidden;
+
 
 
 }
 .main.animate {
   animation: flyup 2s ease-out;
-  transform: translateY(-17%);
-  display: block;
+  transform: translateY(-600px);
+  visibility: visible;
 }
 @keyframes flyup {
   0% {
-    transform: translateY(50%); /* Start off the screen at the bottom */
+    transform: translateY(600px); /* Start off the screen at the bottom */
   }
   100% {
-    transform: translateY(-17%); /* Move up to its normal position */
+    transform: translateY(-600px); /* Move up to its normal position */
   }
 }
 h1{
