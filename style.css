@@ -1,12 +1,6 @@
 html {
   overflow-y: scroll;
 }
-#countdown {
-  min-width: 450px; /* Adjust based on expected text width */
-  max-width: 500px;
-  text-align: center;
-}
-
 body {
   height: 100%;
   background: linear-gradient(90deg, #FF0000, #FF4500, #FFD700, #FF4500, #FF0000);
@@ -144,7 +138,10 @@ img {
  transition: transform 1.5s;
  transform: scale(1.05);
 }
-
+#countdown {
+  min-width: 450px; /* Adjust based on expected text width */
+  text-align: center;
+}
 
 @keyframes shadow {
   0% {
@@ -165,10 +162,15 @@ img {
   color: white;
   font-family: cursive;
 }
-
-.poem-container h3, .poem-container h4, .poem-container h5 {
+.poem-container h3{
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.poem-container h4, .poem-container h5 {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 30px;
 }
 
 .poem-container h4 {
@@ -178,26 +180,13 @@ img {
 .poem-container p {
 
   text-align: left;
+  font-size: 25px;
 }
 
 p { text-align: center;
   line-height: 1.5;
   margin-bottom: 10px;
   color: white;}
-
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, violet);
-  opacity: 0;
-  z-index: 999;
-  transition: opacity 1s ease-in-out;
-}
-
 
 
 
@@ -231,4 +220,14 @@ p { text-align: center;
   100% {
     transform: translateY(0) rotate(360deg); /* Move back down and rotate */
   }
+}
+#name{
+  font-family: cursive;
+  color: gold;
+}
+#name:hover{
+  transition: transform 10s;
+
+  transform: perspective(500px) rotateY(30deg) scale(3) translateY(-50px);
+
 }
